@@ -1,23 +1,16 @@
 var http = require('http');
 
-var server = http.createServer( function (req, res ) { 
-	
-	var categoria = req.url;
-	
-	if(categoria == '/tecnologia') {
-		res.end("<html><body>Notícias de Tecnologia.</html></body>");
-	}
-	else if(categoria == '/moda') { 
-		res.end("<html><body>Notícias de Moda.</html></body>");
-	}
-	else if (categoria == '/beleza')
-	{
-		res.end("<html><body>Notícias de beleza.</html></body>");	
-	} else 
-	{
-		res.end("<html><body>Portal de notícias.</html></body>");
-	}
-	
-console.log('Sevidor rodando na porta 3000');
+var server = http.createServer(function(req,res){
+    var categoria = req.url;
+    if(categoria == '/tecnologia'){
+        res.end("<html><body>Notícias de Tecnologia</body></html>");
+    }else if(categoria == '/moda'){
+        res.end("<html><body>Notícias de Moda</body></html>");
+    }else if(categoria == '/beleza'){
+        res.end("<html><body>Notícias de Beleza</body></html>");
+    }else{
+        res.end("<html><body>Portal de Notícias</body></html>");
+    }
+});
 
-}).listen(3000);
+server.listen(3000);

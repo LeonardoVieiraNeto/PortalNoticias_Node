@@ -1,22 +1,15 @@
 {
-  "name": "portalnoticias",
+  "name": "portal_noticias",
   "version": "1.0.0",
-  "description": "Portal de noticias feito em Node",
+  "description": "Site de notícias",
   "main": "noticias.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LeonardoVieiraNeto/PortalNoticias_Node.git"
-  },
-  "author": "Leonardo Vieira Neto",
+  "author": "Claudio Junior",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LeonardoVieiraNeto/PortalNoticias_Node/issues"
-  },
-  "homepage": "https://github.com/LeonardoVieiraNeto/PortalNoticias_Node#readme",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2"
   }
 }
